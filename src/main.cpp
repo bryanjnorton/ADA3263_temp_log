@@ -37,7 +37,7 @@ void on_get_cold_junction_temp(void){
 
   c.sendCmdStart(temp_is);
   c.sendCmdArg("Cold Junction Temp (C):");
-  c.sendCmdBinArg(maxthermo.readThermocoupleTemperature());
+  c.sendCmdBinArg(maxthermo.readCJTemperature());
   c.sendCmdEnd();
 
 }
